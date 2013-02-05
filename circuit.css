@@ -1,0 +1,15 @@
+body
+{
+background-color: #003A6A;
+background-image: url("./encapsule-blue-circuit-bg-1920x1440.jpg");
+font-family: Tahoma, Verdana, Arial;
+font-size: 12pt;
+color: white;
+}
+
+h1
+{ text-shadow: 2px 2px #001C35; }
+
+a { color: #00A6FF; text-shadow: 1px 1px #003968; font-weight: bold;}
+a:hover { color: #00CC00; text-shadow: 1px 1px #001C35; }
+a:active { color: #009900; text-shadow: -1px -1px #001C35; }
