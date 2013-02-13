@@ -1,0 +1,17 @@
+
+#001C35
+
+#003A6A (ideal page background color behind circuit background image)
+
+#003968
+
+#0087F7
+
+#00A6FF
+
+#B7FFFF
+
+#DAFFFF
+
+
+

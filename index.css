@@ -1,9 +1,7 @@
 #idPageTextBackground
 {
-position: absolute;
+position: fixed;
 margin: 0px;
-top: 10px;
-left: 10px;
 border: 1px solid black;
 background-color: #003A6A;
 opacity: 0.55;
@@ -12,12 +10,10 @@ z-order: 0;
 
 #idPageText
 {
-position: absolute;
+position: fixed;
 margin: 10px;
 padding: 30px;
 width: 720px;
-top: 10px;
-left: 10px;
 border: 1px solid #00A7F7;
 z-order: 1;
 }
