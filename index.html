@@ -97,7 +97,9 @@
         <p>
           <strong>Software is imploding under the weight of its own complexity.</strong> I think this is so because as an industry we have largely
           chosen to ignore that path taken by the hardware engineering community and not yet realized that <strong>the hardware guys have had
-            it right all along.</strong> Their road is harder, requires more up-front investment in tools, methods, verification, re-verification,
+            it right all along.</strong>
+        </p>
+        <p>The hardware road is harder, requires more up-front investment in tools, methods, verification, re-verification,
           systemic re-use of IP, models that matter... But, they're innovating while we fix bugs and argue about the best way to port our old
           code to new platforms, and make incremental improvements to huge existing codebases.
         </p>
@@ -119,8 +121,8 @@
         <p>
           For reasons discussed earlier, hardware details can't be left to chance. You cannot design an arbitrary piece of hardware and then expect that you can
           actually manufacture it without knowing that the little pieces and the system as a whole are realizable. Chip manufacturers (the ones with fabs) invest
-          billions of dollars annually to ensure that this loop is closed. There are entire teams of individuals whose job it is to ensure that the designers
-          have access to standard cell libraries and models that can actually be fabricated.
+          billions (? at least hundreds of millions) of dollars annually to ensure that this loop is closed. There are entire teams of individuals whose job 
+          it is to ensure that the designers have access to standard cell libraries and models that can actually be fabricated.
         </p>
         <p>
           And it doesn't stop there. Given re-usable libraries of hardware IP, hardware designers must additionally consider a myriad of complex interdependent
@@ -133,11 +135,11 @@
         </p>
         <p>
           Software tools, methodologies and libraries are simply not evolved enough for this process to be efficient or safe. The unfortunate consequence
-          of this further fragmentation and duplication of effort: it's often cheaper and less risky to roll your own solution than to invest the time
+          of this is further fragmentation and duplication of effort. It's often cheaper and less risky to roll your own solution than to invest the time
           required to locate and vet a source of re-usable software IP.
         </p>
         <p>
-          Software practioners are necessarily faced with two bad choices: hunt/gather/adapt vs. roll-your-own. The first is inefficient and risky,
+          So software practioners are necessarily faced with two bad choices: hunt/gather/adapt vs. roll-your-own. The first is inefficient and risky,
           the second ultimately wasteful and distracting.
         </p>
         <p>
@@ -168,10 +170,13 @@
           The first, a complete fandango, attempted to embed intelligence in plug-ins (written using conventional techniques - in my
           case C++). The idea was that a plug-in would be given innate knowledge of what it was compatible with and would cooperatively
           bind itself with other plug-ins at runtime to self-assemble useful higher-order structures. I don't know what I was thinking.
-          At the point I could no longer read my own code I gave up on this approach. It doesn't scale.
+          At the point I could no longer read my own code I gave up on this approach. It doesn't scale. And, it can seriously damage your
+          brain.
         </p>
         <p>
-          The second prototype, still using software plug-ins to represent "IC's", removed all intelligence from the plug-ins and instead
+          The <a href="http://blog.encapsule.org/early-encapsule-project-history/2004-encapsule-prototype-screen-shots/" 
+                 title="Encapsule Hyperworx Prototype Screenshots and discussion.." target="_blank">second prototype</a>,
+          still using software plug-ins to represent "IC's", removed all intelligence from the plug-ins and instead
           delegated the responsibility of building higher-order structures to a generic algorithm that used mathematical graph models and
           declarative interconnection contracts expressed as XML files to do the building. This system worked: you could snap together
           visual representations of re-usable chunks of code (plug-ins or collections of plug-ins wired up using XML declarations), push
@@ -199,7 +204,7 @@
 
         <ul>
           <li>Software is even more horked than it was then.</li>
-          <li>Open source has exploded. The maker movement has happened. People are searching for plausible answers.</li>
+          <li>Open source has exploded. The maker movement has happened. People are searching for plausible answers and creative freedom.</li>
           <li>The hardware industry has exploded with innovation and software continues to lag.</li>
           <li>Not building the whole thing this time. It's too big.</li>
           <li>Building only the front-end design tool to allow people to create, and edit models. By itself I think this will be useful
