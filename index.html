@@ -27,86 +27,233 @@
   <body>
 
     <div id="idPageTextBackground">
-      <svg id="idPageTextBackgroundSvg" width="800" height="800"></svg>
-    </div>
-    <div id="idPageText">
-<table>
-<tr>
-<td>  
-    <img src="img/core-seablue-128x128.png" alt="Encapsule sea blue core chip logo" style="align: left;">
-</td>
-<td style="v-align: middle;">
-      <span id="idSiteTitle">Encapsule Project</span><br>
-      <span id="idTagLine">Build better software with circuit models.</span>
-</td>
-</tr>
-</table>
-      <p>
-        The Encapsule Project is an open source effort to apply electrical engineering design and modeling techniques to software development.
-      </p>
-      <pre>
-        <strong>GitHub</strong> ... <a href="https://github.com/Encapsule" title="\@Encapsule on GitHub">https://github.com/Encapsule</a> (code)
-        <strong>Blog</strong> ..... <a href="http://blog.encapsule.org" title="Encapsule Project Blog">http://blog.encapsule.org</a> (info)
-        <strong>Twitter</strong> .. <a href="https://twitter.com/Encapsule" title="\@Encapsule on Twitter">https://twitter.com/Encapsule</a> (news)
-        <strong>Schema</strong> ... <a href="http://schema.encapsule.org" title="Encapsule Schema">http://schema.encapsule.org</a> (app preview)
-      </pre>
-      <p>
-	Encapsule Project is an open source effort to apply concepts from digital circuit design to the specification and synthesis of complex software systems.
-      </p>
-      <p>
-	Fundamentally, digital hardware and software systems are manifestations of
-	<a href="http://en.wikipedia.org/wiki/Turing_machine" title="Turing Machine article on Wikipedia" target="_blank">Turing Machine</a> models.
-	Systems comprised of digital hardware plus software (e.g. whatever you're reading this text on) are themselves ultimately Turing Machines.
-	Yet despite their common mathematical roots, digital hardware and software engineering are radically different fields of endeavor.
-      </p>
-      <p>
-	To understand why this is consider that hardware systems must be physically realized via a complex, time consuming, and extremely
-	expensive manufacturing process. Software by contrast does not. A bug in a chip or circuit board spells doom for a product and the
-	company that produced it. By contrast, a bug in a software system isn't considered that big a deal because it can be fixed, and an
-	update issued at "low cost" and little customer impact.
-      </p>
-<p>
-So of economic necessity, the hardware industry has always had to get it nearly 100% right before going to market whereas the software industry
-has traditionally played fast and loose largely ignoring formal design verification, simulation, and IP re-use strategies. Design it quickly,
-implement it well enough, ship it, and patch it later is the software mantra. That used to work.
-</p>
+      <!-- <svg id="idPageTextBackgroundSvg" width="800" height="2000"></svg> -->
+      <div id="idPageText">
+        <table>
+          <tr>
+            <td>  
+              <img src="img/core-seablue-128x128.png" alt="Encapsule sea blue core chip logo" style="align: left;">
+            </td>
+            <td style="v-align: middle;">
+              <span id="idSiteTitle">Encapsule Project</span><br>
+              <span id="idTagLine">Build better software with circuit models.</span>
+            </td>
+          </tr>
+        </table>
+        <p>
+          The Encapsule Project is an open source effort to apply electrical engineering design and modeling techniques to software development.
+        </p>
+        <pre>
+          <strong>GitHub</strong> ... <a href="https://github.com/Encapsule" title="\@Encapsule on GitHub">https://github.com/Encapsule</a> (code)
+          <strong>Blog</strong> ..... <a href="http://blog.encapsule.org" title="Encapsule Project Blog">http://blog.encapsule.org</a> (info)
+          <strong>Twitter</strong> .. <a href="https://twitter.com/Encapsule" title="\@Encapsule on Twitter">https://twitter.com/Encapsule</a> (news)
+          <strong>Schema</strong> ... <a href="http://schema.encapsule.org" title="Encapsule Schema">http://schema.encapsule.org</a> (app preview)
+        </pre>
+        <p>
+	  <strong>Encapsule Project is an open source effort to apply concepts from digital circuit design to the specification and synthesis of complex software systems.</strong>
+        </p>
+
+        <h2>Two Paths Diverged in a Yellow Wood</h2>
+        <p>
+	  Fundamentally, digital hardware and software systems are manifestations of
+	  <a href="http://en.wikipedia.org/wiki/Turing_machine" title="Turing Machine article on Wikipedia" target="_blank">Turing Machine</a> models
+          (or some other universal computational model - choose your favorite it's not central to the argument here).
+        </p>
+        <p>
+          Similarly, systems comprising digital hardware plus software (e.g. whatever you're reading this text on) are themselves describable as Turing Machines
+          models. Few would dispute this. Yet despite their common mathematical roots, digital hardware and software engineering are radically different fields
+          of endeavor.
+        </p>
+        <p>
+	  To understand why this is consider that hardware systems must be physically realized via a complex, time consuming, and extremely
+	  expensive manufacturing process. Software by contrast does not. A bug in a chip or circuit board spells doom for a product and the
+	  company that produced it. By contrast, a bug in a software system isn't considered that big a deal because it can be fixed, and an
+	  update issued at "low cost" and little customer impact.
+        </p>
+        <p>
+          So of economic necessity, the hardware industry has always had to get it nearly 100% right before going to market whereas the software industry
+          has traditionally played fast and loose largely ignoring formal design verification, simulation, and IP re-use strategies. Design it quickly,
+          implement it well enough, ship it, and patch it later is the software mantra. That used to work.
+        </p>
+        <p>
+          There was a time when if you found the right small group of people and locked them away for awhile that they would build you the
+          next VMS or Windows NT, the world would change, and the money would print itself. Who were these people?
+        </p>
+        <p>
+          They were computer scientists and engineers with deep knowledge of hardware (of necessity). The decission to forgo formalism in the
+          name of expediency was not taken casually. It was carefully considered, and at the time the decission was correct (see money that prints itself).
+          What was perhaps not clear at the time is that this paradigm choice would pave a road forward that many would follow not knowing there
+          was an alternate path to the same end.
+        </p>
+
+
+        <h2>Software Has Taken the Wrong Path</h2>
+        <p>
+          Even as recently as twenty years ago, the scale, scope, and importance of software systems as they exist today could scarcely have been imagined.
+          Software systems have become so large and complex that very few people (myself included) really fully understand how they work. Sure there are
+          a few individuals who understand all the pieces and where they fit into the puzzle. However, the days when small groups of people were able to
+          to make startling software advances in short time seem to have passed. There's simply too much complexity, too much legacy, too much code.
+        </p>
+        <p>
+          <strong>Software is imploding under the weight of its own complexity.</strong> I think this is so because as an industry we have largely
+          chosen to ignore that path taken by the hardware engineering community and not yet realized that <strong>the hardware guys have had
+            it right all along.</strong> Their road is harder, requires more up-front investment in tools, methods, verification, re-verification,
+          systemic re-use of IP, models that matter... But, they're innovating while we fix bugs and argue about the best way to port our old
+          code to new platforms, and make incremental improvements to huge existing codebases.
+        </p>
+        <p>
+          To my way of thinking, an honest accounting of the cost of producing software must include the cost of constant revision, and the
+          manifest waste of having no efficient way to re-use existing software IP. Well intentioned efforts to make software development more
+          cost effective like Agile to me seem like putting the cart out in front of an unbroken horse. Break the horse, then we can argue about
+          cart placement.
+        </p>
 
 
 
+        <h2>The Intrinsic Value of Re-Usable IP</h2>
+        <p>
+          Fundamental to the sucess of any hardware company is the management, and re-use of their existing intellectual property. This is necessary
+          because circuit designs are (a) very very complicated (b) must ultimately be realized in a physical manufacturing process subject to the laws of
+          physics, cost and availability of materials, time...
+        </p>
+        <p>
+          For reasons discussed earlier, hardware details can't be left to chance. You cannot design an arbitrary piece of hardware and then expect that you can
+          actually manufacture it without knowing that the little pieces and the system as a whole are realizable. Chip manufacturers (the ones with fabs) invest
+          billions of dollars annually to ensure that this loop is closed. There are entire teams of individuals whose job it is to ensure that the designers
+          have access to standard cell libraries and models that can actually be fabricated.
+        </p>
+        <p>
+          And it doesn't stop there. Given re-usable libraries of hardware IP, hardware designers must additionally consider a myriad of complex interdependent
+          constraints: space, time, power, heat, performance goals... Again, you can't leave these things to chance when the cost of getting your first physical
+          prototype is measured in 9-digit dollar units and mulitple business quarters.
+        </p>
+        <p>
+          But that's just exactly what the hardware community does every day. And they're really good it because they have to be. But, this is very
+          expensive. So, every piece of everything is re-used in new designs whenever possible. Software designers try, but it's ultimately hopeless.
+        </p>
+        <p>
+          Software tools, methodologies and libraries are simply not evolved enough for this process to be efficient or safe. The unfortunate consequence
+          of this further fragmentation and duplication of effort: it's often cheaper and less risky to roll your own solution than to invest the time
+          required to locate and vet a source of re-usable software IP.
+        </p>
+        <p>
+          Software practioners are necessarily faced with two bad choices: hunt/gather/adapt vs. roll-your-own. The first is inefficient and risky,
+          the second ultimately wasteful and distracting.
+        </p>
+        <p>
+          <strong>Re-usable IP is where it's at. Software needs to focus on the re-usable IP problem.</strong>
+        </p>
 
 
+        <h2>The "Soft Circuit" Idea</h2>
+        <p>
+          The concept of "soft circuits" evolved over many years of thinking about how best to write software libraries that were easy for other people
+          to use effectively without a major investment. I had some small success but the results weren't satisfying. What I really wanted was a way
+          to build non-trivial re-usable chunks of code that you could just drop into a design a go.
+        </p>
+        <p>
+          Then one day while doing real work for my employer, I realized that the thing I hated most about existing software libraries was that
+          it was left to me to discern the overall state model of the library in order to use it. For example, call this function get an object,
+          call these methods on the object passing in this other object. Then if this is true, instantiate another object passing in your result
+          object. Blah blah blah...
+        </p>
+        <p>
+          Why can't I just have a "socket" like what's soldered to a circuit board, and go find something that's pin compatible and drop it in?
+          Why can't I quickly assess the capabilities of a library by reading its "data sheet" like I can for an IC? Why do _I_ have to wire
+          up the "pins" by hand just to try it out? If I know what my inputs and outputs are, why do I have to spend so much time looking
+          for something I can just use. Lots of hard questions that seemed worth trying to answer.
+        </p>
+        <p>
+          I built two prototype systems both of which metaphorically replaced "IC" with software plug-in and worked out from there. 
+          The first, a complete fandango, attempted to embed intelligence in plug-ins (written using conventional techniques - in my
+          case C++). The idea was that a plug-in would be given innate knowledge of what it was compatible with and would cooperatively
+          bind itself with other plug-ins at runtime to self-assemble useful higher-order structures. I don't know what I was thinking.
+          At the point I could no longer read my own code I gave up on this approach. It doesn't scale.
+        </p>
+        <p>
+          The second prototype, still using software plug-ins to represent "IC's", removed all intelligence from the plug-ins and instead
+          delegated the responsibility of building higher-order structures to a generic algorithm that used mathematical graph models and
+          declarative interconnection contracts expressed as XML files to do the building. This system worked: you could snap together
+          visual representations of re-usable chunks of code (plug-ins or collections of plug-ins wired up using XML declarations), push
+          a button, and the system would do the graph splicing, instantiate the plug-ins, late-bind their inputs and outputs, spawn some
+          some threads, and actuate data flow through the graph. The result: software LEGOs. Well sort of.
+        </p>
+        <p>
+          The reality was actually not as grand as I had hoped. Nobody beat a path to my door offering large sums of money to continue
+          and complete the work. And, in 2004 there wasn't a lot of speculation going on in software. Particularly not in software tools.
+          The only VC's who would talk to me were those who had lost their shirts investing in EDA and they mostly wanted to tell me
+          to give it up, or come back when I had my first $1M sale. I couldn't do either.
+        </p>
+        <p>
+          Out of time, and running badly in the red at this point, I burned the prototype code onto a CD and didn't look at it again
+          until 2012. For awhile I even managed to convince myself the entire thing was a bad idea in the first place. But it's not
+          a bad idea. It's just an idea bigger than I can manage alone. So what?
+        </p>
 
 
+        <h2>Encapsule Project</h2>
+        <p>
+          In 2013 I've resolved to take another shot at this. There are several reasons why I think there's some small chance this might
+          get some traction this time around.
+        </p>
 
-
-
-        I've been actively working on a web-based editing application for Soft Circuit Description Language (SCDL) models. SCDL (pronounced "scuddle") is a JSON object model for "soft circuits." Soft circuits are system design artifacts conceptually analogous to digital circuit schematics.
-
-
-
-
-<p>
-The application is called <a href="http://en.wikipedia.org/wiki/Schema" title="Schema on Wikipedia">Schema</a> and should be online and functional sometime late in February, 2013.
-</p>
-<p>
-</p>
-      <p>
-        In addition to being a cool HTML5 demo, I am excited about the SCDL editor because SCDL models are <i>machine-readable</i> system specifications that can be used like blueprints.
-      </p>
-      <p>
         <ul>
-          <li>Quickly 'gist' SCDL models and share via GitHub.</li>
-          <li>Interpret SCDL at runtime. (e.g. in Javascript in a generic host implemented in Javascript)</li>
-          <li>Transform SCDL to something else and compile or interpret that. (e.g. a SCDL model can be transformed into a C++ meta program).</li>
-          <li>Leverage SCDL for system simulation, verification, and test automation.</li>
+          <li>Software is even more horked than it was then.</li>
+          <li>Open source has exploded. The maker movement has happened. People are searching for plausible answers.</li>
+          <li>The hardware industry has exploded with innovation and software continues to lag.</li>
+          <li>Not building the whole thing this time. It's too big.</li>
+          <li>Building only the front-end design tool to allow people to create, and edit models. By itself I think this will be useful
+            if only to further the debate. Maybe more. We'll see.</li>
+          <li>I'm building for the browser.</li>
+          <li>Everything is open source under a permissive license.</li>
         </ul>
-      <p>
-      <p>
-        Thank you for your interest in Encapsule Project!
-      </p>
-      <p>
-        <a href="http://blog.encapsule.org/author/chrisrus" title="Contact Chris">ChrisRus</a>
-      </p>
-    </div>
+
+        <p>
+          As "Schema" (the browser-based design tool) comes into focus, I'll be getting into a lot more of the details that are too
+          difficult to convey as plain text. I also plan to do some talks and demos later this spring in the Seattle area. Please
+          follow <a href="https://twitter.com/Encapsule" title="@Encapsule on Twitter">@Encapsule</a> on Twitter for updates or
+          check out the <a href="http://blog.encapsule.org/" title="Encapsule Project Blog">Encapsule Project Blog</a> for more details.
+        </p>
+        
+
+
+          
+
+        <h2>Why Do We Do This?</h2>
+        <p>
+          I remember when writing software was fun and exciting. Little slices of it still are. But overall, it's a giant fragmented mess and most
+          of our time and effort is spent devising creative strategies to unhork the completely horked. Don't get me wrong: I love software. But,
+          I would love it more if we could return to the time when a day spent coding moved us forward instead of largely marching in place.
+        </p>
+        <p>
+          This is possible, I think, but we need to stop making up new languages, writing books on Agile methodologies, and instead study and learn
+          from the hardware community. They're doing better work, faster, and having more fun doing it.
+        </p>
+        <p>
+          We too can kick ass, have fun, and innovate. And, maybe in the process unlock the hardware guys so they too can realize their
+          full potential.
+        </p>
+
+
+
+        <p>
+          <strong>Thank you for your interest in Encapsule Project!</strong>
+        </p>
+        <p>
+          - <a href="http://blog.encapsule.org/author/chrisrus/" title="About">ChrisRus</a>
+        </p>
+
+
+
+
+
+
+        
+
+
+
+
+      </div><!-- idPageText>
+    </div><!-- idPageTextBackground -->
   </body>
 </html>

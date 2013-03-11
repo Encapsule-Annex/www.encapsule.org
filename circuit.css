@@ -12,6 +12,8 @@ body
 {
 background-color: #003A6A;
 background-image: url("./encapsule-blue-circuit-bg-1920x1440.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
 font-family: Verdana, Arial, Tahoma;
 font-size: 12pt;
 color: white;
