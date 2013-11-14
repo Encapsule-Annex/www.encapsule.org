@@ -18,9 +18,9 @@ font-family: Arial;
 font-size: 12pt;
 }
 
-a { color: #0099FF;  font-weight: bold; text-decoration: none;}
-a:hover { color: #0000FF; text-decoration: underline;}
-a:active { color: #009900; }
+a { color: #FF7700;  font-weight: bold; text-decoration: none;}
+a:hover { color: #DD5500; text-decoration: underline;}
+a:active { color: #FF0000; }
 
 #idSiteTitle { color: white; font-size: 26pt; font-weight: bold; text-shadow: 0.1em 0.1em 0.1em rgba(0,0,0,0.4); text-align: center; }
 #idTagLine { color:  #AAAAAA; font-weight: bold; font-size: 12pt;  padding-top: 0.5em; padding-bottom: 0.5em; text-align: center;}
